@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 
 
     {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} Welcome to FlaskBlogh {% endblock %}</h1>
+    <h1>{% block title %} Welcome to FlaskBlogh - Bluechip {% endblock %}</h1>
     {% for post in posts %}
      <a href="{{ url_for('post', post_id=post['id']) }}"></a>
         <h2>{{ post['title'] }}</h2>
